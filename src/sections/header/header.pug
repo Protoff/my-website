@@ -1,0 +1,34 @@
+header.heading
+  .wrapper
+    ul.items
+      li.item
+        picture
+          source(srcset="img/alex.webp", type="image/webp")
+          img(src="img/alex.jpg", alt="Александр Шаблов")
+      li.item
+        a.link(href="https://t.me/Alexsashka08", target="_blank")
+          img.logo(src="img/telegram-logo.svg", alt="Александр Шаблов")
+          span Telegram
+
+header.header
+  .wrapper
+    .title
+      h1.h1-title Привет, меня зовут <span>Александр Шаблов</span> я люблю <span>веб-разработку!</spa>
+    .plane
+      picture.plane-image
+        source(srcset="img/plane1.webp", type="image/webp")
+        img(src="img/plane1.png", alt="Самолётик")
+
+      each val in [['CSS',3],['JS',2],['VUE',5],['HTML',1],['PUG',4],['SASS',6],['REACT',7]]
+        div(class= "plane-cloud cloud" + val[1])
+          picture(class= "plane-cloud-picture")
+            source(srcset="img/cloud100.webp", type="image/webp")
+            img(src="img/cloud100.png", alt="Облачко")
+            span.name= val[0]
+
+      .plane-shadow
+      .plane-comment Пример простой CSS-анимации
+
+    p.comment Я люблю разрабатывать сайты, программировать, люблю изучать новые технологии и применять их в работе - всё это очень интересно!
+
+    a.button(href="https://t.me/Alexsashka08", target="_blank") Напишите мне

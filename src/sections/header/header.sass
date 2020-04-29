@@ -1,0 +1,58 @@
+header.heading
+  background: #fff
+  .wrapper
+    .items
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+      .item:last-child
+        .link
+          display: flex
+          color: #000
+          .logo
+            width: 18px
+            height: 18px
+            margin-right: 10px
+
+header.header
+  padding-top: 50px
+  padding-bottom: 50px
+  .wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+
+    .title
+      .h1-title
+        font-size: 55px
+        font-weight: 100
+        font-variation-settings: "wght" 444, "wdth" 50, "slnt" 0
+
+        span
+          display: block
+          font-size: 60px
+          font-variation-settings: "wght" 641, "wdth" 40, "ital" 0.3
+
+
+    .plane
+      +plane()
+      margin-bottom: 50px
+
+    .comment
+      font-size: 25px
+      margin-bottom: 50px
+
+    .button
+      display: inline-block
+      padding: 18px 40px
+      border-radius: 0px 10px 10px 10px
+      font-size: 20px
+      color: #ffffff
+      background: #D81B60
+
+      &:hover
+        background: rgba(67, 160, 71, 1)
+        transform: translate(0px, -3px) scale(1.01)
+        box-shadow: 0 20px 40px 0 rgba(67, 160, 71, 0.51)
