@@ -16,6 +16,7 @@ const rigger = require('gulp-rigger')
 const webp = require('gulp-webp')
 const imagemin = require('imagemin')
 const imageminWebp = require('imagemin-webp')
+const svg = require('gulp-svg-sprite')
 
 function deleteImages() {
   return del(['dist/img'])
@@ -27,13 +28,28 @@ function imgcompress() {
 }
 
 function imageWebp() {
-  return src('./src/imgOrig/**/*.*')
+  return src('./src/imgOrig/**/*.{jpg,png}')
     .pipe(webp(imageminWebp({
       lossless: false,
       quality: 50,
       alphaQuality: 100
   })))
     .pipe(dest('dist/img'))
+}
+
+function svgSprites() {
+  return src('./src/imgOrig/**/*.svg')
+    .pipe(svg({
+      shape: {
+        dest: "intermediate-svg"
+      },
+      mode: {
+        stack: {
+          sprite: "../sprite.svg"
+        }
+      }
+    }))
+    .pipe(dest('dist/img/svg'))
 }
 
 function deleteDist() {
@@ -80,7 +96,7 @@ function javascript() {
 }
 
 exports.build = series(deleteDist, parallel(fonts, css, javascript, html));
-exports.images = series(deleteImages, parallel(imgcompress, imageWebp));
+exports.images = series(deleteImages, parallel(imgcompress, imageWebp, svgSprites));
 exports.fonts = series(fonts);
 
 exports.default = function () {

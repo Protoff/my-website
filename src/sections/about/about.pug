@@ -1,3 +1,35 @@
+-var html = ['HTML', 'html']
+-var css = ['CSS', 'css3']
+-var js = ['JavaScript', 'js']
+-var jquery = ['jQuery', 'jquery']
+-var vue = ['VueJS', 'vue']
+-var php = ['PHP', 'php']
+-var other = ['и другие...', 'other']
+
+-var gulp = ['Gulp', 'gulp']
+-var webpack = ['WebPack', 'webpack']
+-var git = ['GIT', 'git']
+-var pg = ['PUG', 'pug1']
+-var sass = ['SASS', 'sass']
+-var less = ['LESS', 'less']
+
 section.about
   .wrapper
     h2.h2-title Немного обо мне.
+      span.comment Я люблю узнавать и применять что-то новое, поэтому список постоянно пополняется
+
+    .skills
+      h3.h3-title Мои навыки
+      ul.items
+        each skill in [html, css, js, jquery, vue, php, other]
+          li.item
+            img(src="img/svg/sprite.svg#svg--" + skill[1], alt="HTML")
+            span= skill[0]
+
+    .instruments
+      h3.h3-title Мои помощники
+      ul.items
+        each instrument in [gulp, webpack, git, pg, sass, less, other]
+          li.item
+            img(src="img/svg/sprite.svg#svg--" + instrument[1], alt="HTML")
+            span= instrument[0]
