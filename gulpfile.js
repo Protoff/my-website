@@ -16,12 +16,9 @@ const rigger = require('gulp-rigger')
 const webp = require('gulp-webp')
 const imagemin = require('imagemin')
 const imageminWebp = require('imagemin-webp')
-<<<<<<< HEAD
 const ghPages = require('gh-pages');
 const path = require('path');
-=======
 const svg = require('gulp-svg-sprite')
->>>>>>> dev
 
 function deleteImages() {
   return del(['dist/img'])
