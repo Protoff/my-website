@@ -16,6 +16,8 @@ const rigger = require('gulp-rigger')
 const webp = require('gulp-webp')
 const imagemin = require('imagemin')
 const imageminWebp = require('imagemin-webp')
+const ghPages = require('gh-pages');
+const path = require('path');
 
 function deleteImages() {
   return del(['dist/img'])
@@ -82,6 +84,11 @@ function javascript() {
 exports.build = series(deleteDist, parallel(fonts, css, javascript, html));
 exports.images = series(deleteImages, parallel(imgcompress, imageWebp));
 exports.fonts = series(fonts);
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './dist'), cb);
+}
+exports.deploy = deploy;
 
 exports.default = function () {
   exports.build();

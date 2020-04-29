@@ -30,13 +30,16 @@
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
+    "gh-pages": "^2.2.0",
     "gulp-babel": "^8.0.0",
     "gulp-rigger": "^0.5.8",
+    "push-dir": "^0.4.1",
     "smart-grid": "^2.1.2"
   },
   "scripts": {
     "dev": "gulp",
     "images": "gulp images",
-    "build": "gulp build"
+    "build": "gulp build",
+    "deploy": "gh-pages -d dist"
   }
 }
