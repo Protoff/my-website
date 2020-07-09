@@ -1,0 +1,67 @@
+section.about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+section.about .wrapper .skills,
+section.about .wrapper .instruments {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+section.about .wrapper .skills .items,
+section.about .wrapper .instruments .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+section.about .wrapper .skills .items .item,
+section.about .wrapper .instruments .items .item {
+  margin-bottom: 20px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 15px;
+}
+
+section.about .wrapper .skills .items .item .icon-svg,
+section.about .wrapper .instruments .items .item .icon-svg {
+  max-width: 40px;
+  max-height: 40px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 580px) {
+  section.about .wrapper .skills .items,
+  section.about .wrapper .instruments .items {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}

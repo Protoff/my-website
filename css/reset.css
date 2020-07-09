@@ -1,0 +1,242 @@
+@font-face {
+  font-family: 'RobotoSlab';
+  src: url("../fonts/RobotoSlab-VariableFont_wght.ttf") format("truetype");
+  font-weight: 1 999;
+}
+
+@font-face {
+  font-family: 'Exo2';
+  src: url("../fonts/Exo2-VariableFont_wght.ttf") format("truetype");
+  font-weight: 1 999;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url("../fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+  font-weight: 1 999;
+}
+
+@font-face {
+  font-family: 'Kreon';
+  src: url("../fonts/Kreon-VariableFont_wght.ttf") format("truetype");
+  font-weight: 1 999;
+}
+
+@font-face {
+  font-family: 'Dosis';
+  src: url("../fonts/Dosis-VariableFont_wght.ttf") format("truetype");
+  font-weight: 1 999;
+}
+
+@font-face {
+  font-family: 'GimletXRay';
+  src: url("../fonts/GimletXRay-VF-customized.woff2") format("woff2-variations");
+  font-weight: 1 999;
+}
+
+@font-face {
+  font-family: 'HyperspaceRace';
+  src: url("../fonts/HyperspaceRace-VariableGX.woff2") format("woff2-variations");
+  font-weight: 1 999;
+}
+
+@font-face {
+  font-family: 'PFGrandGothik';
+  src: url("../fonts/PFGrandGothik-VF.woff2") format("woff2-variations");
+  font-weight: 1 999;
+}
+
+@font-face {
+  font-family: 'ScienceGothicVF';
+  src: url("../fonts/ScienceGothicVF.woff2") format("woff2-variations");
+  font-weight: 1 999;
+}
+
+@font-face {
+  font-family: 'HalvarStencilFlexGX';
+  src: url("../fonts/HalvarStencilFlexGX.woff2") format("woff2-variations");
+  font-weight: 1 999;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'PFGrandGothik';
+  font-variation-settings: "wght" 510, "wdth" 70, "slnt" 0;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  box-sizing: border-box;
+  font-family: 'PFGrandGothik';
+  font-variation-settings: "wght" 510, "wdth" 70, "slnt" 0;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  box-sizing: border-box;
+  font-family: 'PFGrandGothik';
+  font-variation-settings: "wght" 510, "wdth" 70, "slnt" 0;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  box-sizing: border-box;
+  font-family: 'PFGrandGothik';
+  font-variation-settings: "wght" 510, "wdth" 70, "slnt" 0;
+}
+
+html,
+input::placeholder,
+textarea::placeholder {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'PFGrandGothik';
+  font-variation-settings: "wght" 510, "wdth" 70, "slnt" 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  color: inherit;
+}
+
+a:hover {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+legend {
+  color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media screen and (max-width: 780px) {
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
