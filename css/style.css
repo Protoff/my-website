@@ -235,8 +235,20 @@ img {
 }
 
 section {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.title .h1-title {
+  font-size: 50px;
+  font-weight: 100;
+  font-variation-settings: "wght" 444, "wdth" 50, "slnt" 0;
+}
+
+.title .h1-title span {
+  display: block;
+  font-size: 55px;
+  font-variation-settings: "wght" 641, "wdth" 40, "ital" 0.3;
 }
 
 .h2-title {
@@ -311,18 +323,6 @@ header.header .wrapper {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-}
-
-header.header .wrapper .title .h1-title {
-  font-size: 50px;
-  font-weight: 100;
-  font-variation-settings: "wght" 444, "wdth" 50, "slnt" 0;
-}
-
-header.header .wrapper .title .h1-title span {
-  display: block;
-  font-size: 55px;
-  font-variation-settings: "wght" 641, "wdth" 40, "ital" 0.3;
 }
 
 header.header .wrapper .plane {
@@ -792,6 +792,12 @@ footer.footer .wrapper ul.items li.item .icon-svg {
   max-height: 20px;
 }
 
+section.project {
+  padding-top: 130px;
+  -webkit-box-shadow: 0px -30px 30px 0px inset rgba(0, 0, 0, 0.05);
+  box-shadow: 0px -30px 30px 0px inset rgba(0, 0, 0, 0.05);
+}
+
 @media screen and (min-width: 1000px) {
   section.portfolio .wrapper .item .h3-title {
     min-height: 75px;
@@ -839,15 +845,15 @@ footer.footer .wrapper ul.items li.item .icon-svg {
 }
 
 @media screen and (max-width: 550px) {
-  .h2-title {
-    font-size: 50px;
-  }
-
-  header.header .wrapper .title .h1-title {
+  .title .h1-title {
     font-size: 45px;
   }
 
-  header.header .wrapper .title .h1-title span {
+  .title .h1-title span {
+    font-size: 50px;
+  }
+
+  .h2-title {
     font-size: 50px;
   }
 }
@@ -872,15 +878,15 @@ footer.footer .wrapper ul.items li.item .icon-svg {
 }
 
 @media screen and (max-width: 450px) {
-  .h2-title {
-    font-size: 45px;
-  }
-
-  header.header .wrapper .title .h1-title {
+  .title .h1-title {
     font-size: 37px;
   }
 
-  header.header .wrapper .title .h1-title span {
+  .title .h1-title span {
+    font-size: 45px;
+  }
+
+  .h2-title {
     font-size: 45px;
   }
 }

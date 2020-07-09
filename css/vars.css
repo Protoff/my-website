@@ -1,6 +1,18 @@
 section {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.title .h1-title {
+  font-size: 50px;
+  font-weight: 100;
+  font-variation-settings: "wght" 444, "wdth" 50, "slnt" 0;
+}
+
+.title .h1-title span {
+  display: block;
+  font-size: 55px;
+  font-variation-settings: "wght" 641, "wdth" 40, "ital" 0.3;
 }
 
 .h2-title {
@@ -25,12 +37,28 @@ section {
 }
 
 @media screen and (max-width: 550px) {
+  .title .h1-title {
+    font-size: 45px;
+  }
+
+  .title .h1-title span {
+    font-size: 50px;
+  }
+
   .h2-title {
     font-size: 50px;
   }
 }
 
 @media screen and (max-width: 450px) {
+  .title .h1-title {
+    font-size: 37px;
+  }
+
+  .title .h1-title span {
+    font-size: 45px;
+  }
+
   .h2-title {
     font-size: 45px;
   }
