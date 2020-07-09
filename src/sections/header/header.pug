@@ -1,3 +1,5 @@
+include ../../pug-mixins/pug-mixins.pug
+
 header.heading
   .wrapper
     ul.items
@@ -7,14 +9,14 @@ header.heading
           img(src="img/alex.jpg", alt="Александр Шаблов")
       li.item
         a.link(href="https://t.me/Alexsashka08", target="_blank")
-          img.logo(src="img/svg/sprite.svg#svg--telegram", alt="Александр Шаблов")
+          +icon('telegram')
           span Telegram
 
 header.header
   .wrapper
     .title
       h1.h1-title.
-        Привет, меня зовут <span>Александр Шаблов</span> я люблю <span>веб-разработку!</spa>
+        Привет, меня зовут <span>Александр Шаблов и мне повезло,</span>я могу заниматься<span>любимым делом - веб-разработкой!</span>
     .plane
       picture.plane-image
         source(srcset="img/plane1.webp", type="image/webp")

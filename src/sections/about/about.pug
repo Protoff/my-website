@@ -1,17 +1,21 @@
--var html = ['HTML', 'html']
--var css = ['CSS', 'css3']
--var js = ['JavaScript', 'js']
--var jquery = ['jQuery', 'jquery']
--var vue = ['VueJS', 'vue']
--var php = ['PHP', 'php']
--var other = ['и другие...', 'other']
+include ../../pug-mixins/pug-mixins.pug
 
--var gulp = ['Gulp', 'gulp']
--var webpack = ['WebPack', 'webpack']
--var git = ['GIT', 'git']
--var pg = ['PUG', 'pug1']
--var sass = ['SASS', 'sass']
--var less = ['LESS', 'less']
+
+-var html = ['HTML', 'html'];
+-var css = ['CSS', 'css3'];
+-var js = ['JavaScript', 'js'];
+-var jquery = ['jQuery', 'jquery'];
+-var vue = ['VueJS', 'vue'];
+-var react = ['ReactJS', 'react'];
+-var php = ['PHP', 'php'];
+-var other = ['и другие...', 'other'];
+
+-var gulp = ['Gulp', 'gulp'];
+-var webpack = ['WebPack', 'webpack'];
+-var git = ['GIT', 'git'];
+-var pg = ['PUG', 'pug'];
+-var sass = ['SASS', 'sass'];
+-var less = ['LESS', 'less'];
 
 section.about
   .wrapper
@@ -21,15 +25,25 @@ section.about
     .skills
       h3.h3-title Мои навыки
       ul.items
-        each skill in [html, css, js, jquery, vue, php, other]
+        each skill in [html, css, js, jquery, vue, react, php, other]
           li.item
-            img(src="img/svg/sprite.svg#svg--" + skill[1], alt="HTML")
+            +icon(skill[1])
             span= skill[0]
 
     .instruments
       h3.h3-title Мои помощники
       ul.items
-        each instrument in [gulp, webpack, git, pg, sass, less, other]
+        each instrument in [gulp, webpack, git]
           li.item
-            img(src="img/svg/sprite.svg#svg--" + instrument[1], alt="HTML")
+            +icon(instrument[1])
+            span= instrument[0]
+        li.item
+          img(src="./img/svg/intermediate-svg/svg--pug.svg", alt="PUG", class="icon-svg")
+          span= pg[0]
+        li.item
+          img(src="./img/svg/intermediate-svg/svg--less.svg", alt="Less", class="icon-svg")
+          span= less[0]
+        each instrument in [ sass, other]
+          li.item
+            +icon(instrument[1])
             span= instrument[0]

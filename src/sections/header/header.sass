@@ -1,5 +1,12 @@
+@import '../../sass-libs/smart-grid'
+@import './_plane'
+
 header.heading
   background: #fff
+  position: fixed
+  width: 100%
+  z-index: 999
+  box-shadow: 0px 30px 30px 0px rgba(0,0,0,0.02)
   .wrapper
     .items
       display: flex
@@ -10,13 +17,13 @@ header.heading
         .link
           display: flex
           color: #000
-          .logo
+          .icon-svg
             width: 18px
             height: 18px
             margin-right: 10px
 
 header.header
-  padding-top: 50px
+  padding-top: 130px
   padding-bottom: 50px
   .wrapper
     display: flex
@@ -26,7 +33,7 @@ header.header
 
     .title
       .h1-title
-        font-size: 55px
+        font-size: 50px
         font-weight: 100
         font-variation-settings: "wght" 444, "wdth" 50, "slnt" 0
         +to(550px)
@@ -36,7 +43,7 @@ header.header
 
         span
           display: block
-          font-size: 60px
+          font-size: 55px
           font-variation-settings: "wght" 641, "wdth" 40, "ital" 0.3
           +to(550px)
             font-size: 50px

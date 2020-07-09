@@ -1,0 +1,31 @@
+@import '../../sass-libs/smart-grid'
+
+section.portfolio
+  box-shadow: 0px -30px 30px 0px inset rgba(0,0,0,0.05)
+  padding-top: 50px
+  padding-bottom: 50px
+  .wrapper
+    .h2-title Портфолио
+    .items
+      display: flex
+      justify-content: space-between
+      +to(1000px)
+        display: block
+    .item
+      +size(4)
+      +to(1000px)
+        +size(12)
+        margin: 0 auto
+        margin-bottom: 80px
+      .h3-title
+        +from(1000px)
+          min-height: 75px
+      .comment
+        margin-bottom: 10px
+      .link
+        display: block
+        &:hover
+          color: #0f41cc
+      img
+        margin-top: 40px
+        box-shadow: 0px 30px 30px 0px rgba(0,0,0,0.02)
