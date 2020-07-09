@@ -1,8 +1,28 @@
 @import './smart-grid.sass'
 
 section
-  padding-top: 25px
-  padding-bottom: 25px
+  padding-top: 50px
+  padding-bottom: 50px
+
+.title
+  .h1-title
+    font-size: 50px
+    font-weight: 100
+    font-variation-settings: "wght" 444, "wdth" 50, "slnt" 0
+    +to(550px)
+      font-size: 45px
+    +to(450px)
+      font-size: 37px
+
+    span
+      display: block
+      font-size: 55px
+      font-variation-settings: "wght" 641, "wdth" 40, "ital" 0.3
+      +to(550px)
+        font-size: 50px
+      +to(450px)
+        font-size: 45px
+
 
 .h2-title
   font-size: 60px

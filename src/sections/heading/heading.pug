@@ -1,0 +1,13 @@
+include ../../pug-mixins/pug-mixins.pug
+
+header.heading
+  .wrapper
+    ul.items
+      li.item
+        picture
+          source(srcset="img/alex.webp", type="image/webp")
+          img(src="img/alex.jpg", alt="Александр Шаблов")
+      li.item
+        a.link(href="https://t.me/Alexsashka08", target="_blank")
+          +icon('telegram')
+          span Telegram
