@@ -8,7 +8,6 @@ include ../../pug-mixins/pug-mixins.pug
 -var vue = ['VueJS', 'vue'];
 -var react = ['ReactJS', 'react'];
 -var php = ['PHP', 'php'];
--var other = ['и другие...', 'other'];
 
 -var gulp = ['Gulp', 'gulp'];
 -var webpack = ['WebPack', 'webpack'];
@@ -25,10 +24,12 @@ section.about
     .skills
       h3.h3-title Мои навыки
       ul.items
-        each skill in [html, css, js, jquery, vue, react, php, other]
+        each skill in [html, css, js, jquery, vue, react, php]
           li.item
             +icon(skill[1])
             span= skill[0]
+        li.item
+          span и другие...
 
     .instruments
       h3.h3-title Мои помощники
@@ -43,7 +44,9 @@ section.about
         li.item
           img(src="./img/svg/intermediate-svg/svg--less.svg", alt="Less", class="icon-svg")
           span= less[0]
-        each instrument in [ sass, other]
+        each instrument in [ sass]
           li.item
             +icon(instrument[1])
             span= instrument[0]
+        li.item
+          span и другие...

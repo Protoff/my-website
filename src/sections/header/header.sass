@@ -3,31 +3,34 @@
 
 header.header
   padding-top: 130px
-  padding-bottom: 50px
+  +to(500px)
+    padding-top: 100px
   .wrapper
     display: flex
     align-items: center
     justify-content: space-between
     flex-wrap: wrap
+    +to(500px)
+      justify-content: center
 
-    // .title
-    //   .h1-title
-    //     font-size: 50px
-    //     font-weight: 100
-    //     font-variation-settings: "wght" 444, "wdth" 50, "slnt" 0
-    //     +to(550px)
-    //       font-size: 45px
-    //     +to(450px)
-    //       font-size: 37px
+    .title
+      .h1-title
+        font-size: 50px
+        font-weight: 100
+        font-variation-settings: "wght" 444, "wdth" 50, "slnt" 0
+        +to(550px)
+          font-size: 35px
+        +to(450px)
+          font-size: 25px
 
-    //     span
-    //       display: block
-    //       font-size: 55px
-    //       font-variation-settings: "wght" 641, "wdth" 40, "ital" 0.3
-    //       +to(550px)
-    //         font-size: 50px
-    //       +to(450px)
-    //         font-size: 45px
+        span
+          display: block
+          font-size: 55px
+          font-variation-settings: "wght" 641, "wdth" 40, "ital" 0.3
+          +to(550px)
+            font-size: 40px
+          +to(450px)
+            font-size: 30px
 
 
     .plane
@@ -37,9 +40,10 @@ header.header
     .comment
       font-size: 25px
       margin-bottom: 50px
+      +to(500px)
+        font-size: 16px
 
     .button
-      display: inline-block
       padding: 18px 40px
       border-radius: 0px 10px 10px 10px
       font-size: 20px

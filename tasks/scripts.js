@@ -9,7 +9,7 @@ const debug = require("gulp-debug")
 
 task('javascript', () => {
   return src('src/**/*.js')
-    .pipe(rigger())
+    //.pipe(rigger())
     // .pipe(babel({
     //   presets: ['@babel/env']
     // }))

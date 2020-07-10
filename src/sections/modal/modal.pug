@@ -1,0 +1,17 @@
+
+.modal-overlay#modal
+  .content
+    form#modalForm.form
+      p.close.modal-close X
+      p.item
+        input.input(type="text", name="name", placeholder="Ваше имя")
+      p.item
+        textarea.input.textarea(placeholder="Ваше сообщение", name="message")
+      p.item
+        input.input(type="text", name="contact", placeholder="Как с Вами связаться?")
+      p.item
+        button.button(type="submit") Отправить
+
+//- .modal-overlay#modalThanks
+//-   .content
+//-     h4.h4-title Сообщение успешно отправлено и я скоро с Вами свяжусь.<br>Спасибо!
