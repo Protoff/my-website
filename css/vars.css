@@ -50,6 +50,13 @@ section {
   }
 }
 
+@media screen and (max-width: 500px) {
+  section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .title .h1-title {
     font-size: 37px;
