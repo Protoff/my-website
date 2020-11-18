@@ -17,4 +17,4 @@ mixin picture(name, alt, ext='png', xs=true)
       -var srcset = pathName + el[0] + '.';
       source(srcset=srcset + "webp", type="image/webp", media=el[1] )
       source(srcset=srcset + ext, media=el[1] )
-    img(src='', alt=alt)
+    img(src=pathName + '.' + ext, alt=alt)
