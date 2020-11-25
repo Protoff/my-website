@@ -2,9 +2,8 @@
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  new SymbolsAnimate(".header .button");
 
-  offsetElemsToShow('section.portfolio .item')
+  new SymbolsAnimate(".header .button .word span");
 
   document.addEventListener("click", (e) => {
     if (e.target.getAttribute("href") === "#modal") {
@@ -129,28 +128,4 @@ class SymbolsAnimate {
     const rand = min - 0.5 + Math.random() * (max - min + 1);
     return Math.round(rand);
   }
-}
-
-function offsetElemsToShow(elems) {
-  const elemsToShow = document.querySelectorAll(elems);
-  const offsetBottom = 200;
-
-  elemsToShow.forEach( (elem, index) => {
-    window.addEventListener('scroll', () => {
-      const windowHeight = document.documentElement.clientHeight;
-      const coords = elem.getBoundingClientRect();
-      const topVisible = coords.top + offsetBottom > 0 && coords.top + offsetBottom < windowHeight;
-      const bottomVisible = coords.bottom - offsetBottom < windowHeight && coords.bottom - offsetBottom > 0;
-
-      const image = elem.querySelector('.elem-offset')
-
-      if (topVisible || bottomVisible) {
-        setTimeout(() => {
-          image.classList.add('image-show');
-        }, index * 200);
-      } else {
-        image.classList.remove('image-show');
-      }
-    });
-  })
 }

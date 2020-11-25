@@ -2,6 +2,19 @@
 section.portfolio
   .wrapper
     h2.h2-title Портфолио
+    p.comment
+      | &nbsp;На сайтах использую тег &lt;picture&gt; - это позволяет ещё больше ускорить загрузку сайта, оптимизировать изображения для всех разрешений и использовать современный формат изображения отличающийся очень небольшим "весом" - webp. В 2020 году о поддержке этого формата объявил и apple, значит теперь и пользователи safari воспользуются всеми плюсами этого формата.
+    a(href="https://caniuse.com/?search=webp" target="_blank", rel="noopener" title="Caniuse").comment-link &nbsp;Поддержка webp по данным Caniuse
+        +icon('click')
+    p.comment
+      | &nbsp;В целом все сайты хорошо оптимизированы, быстро загружаются и быстро работают - этому я уделяю особое внимание.
+      | На сайтах почти нет анимации - меня постоянно просят делать без неё, но меня анимация привлекает и занимаюсь ей в свободное время.
+      | Использую svg-спрайты, современные методы вёрстки - flex-box, css-grid, обычно при вёрстке использую css-препроцессор SASS, HTML-шаблонизатор PUG, работу веду с помощью своей собственной сборки GULP.
+      | Сборка "живая", постоянно совершенствуется и изменяется, это готовый шаблон для начала работы - содержит PUG-миксины для тега picture, svg-спрайтов, миксины SASS и в том числе библиотеку миксинов smart-grid от Дмитрия Лаврика - всё это позволяет писать красивый, понятный и легко поддерживаемый код.
+    a(href="https://github.com/Protoff/gulp-starter-2" target="_blank", rel="noopener" title="GitHub").comment-link &nbsp;Моя Gulp-сборка в GitHub
+        +icon('click')
+    p.comment
+      | На этой страничке впервые использовал вариативный шрифт - очень интересная, гибкая штука
     ul.items
       li.item
         h3.h3-title Weather Charts
@@ -14,7 +27,7 @@ section.portfolio
         a(href="https://trans-oil.protoff.ru/", title="Перейти к сайту", target="_blank", rel="noopener", class="elem-offset").link Перейти к сайту
           +picture('trans-oil', 'Сайт транспортной компании', 'jpg')
       li.item
-        h3.h3-title Интернет-магазин детских игрушек
-        p.comment Красивый интернет-магазин, построен на базе плагина WooCommerce WordPress
-        a(href="https://babyshop.protoff.ru/", title="Перейти к сайту", target="_blank", rel="noopener", class="elem-offset").link Перейти к сайту
-          +picture('babyshop', 'Интернет-магазин', 'jpg')
+        h3.h3-title Сайт клиники вакуум-терапии
+        p.comment Простой сайт столичной клиники, админка - WordPress
+        a(href="https://makhanov.ru/", title="Перейти к сайту", target="_blank", rel="noopener", class="elem-offset").link Перейти к сайту
+          +picture('makhanov', 'Сайт клиники', 'jpg')
